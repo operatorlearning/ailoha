@@ -1,0 +1,56 @@
+{
+ "id": "20260919-125245-ea00",
+ "title": "帮我计算 (12+8)*3.5",
+ "created_at": 1789793565.108112,
+ "updated_at": 1789793565.1111112,
+ "summary": "",
+ "archive": [],
+ "tool_state": {},
+ "messages": [
+  {
+   "role": "user",
+   "content": "帮我计算 (12+8)*3.5",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789793565.1091118
+  },
+  {
+   "role": "assistant",
+   "content": "好的，我需要调用工具来处理。",
+   "tool_calls": [
+    {
+     "id": "mock_call_1",
+     "type": "function",
+     "function": {
+      "name": "calculator",
+      "arguments": "{\"expression\": \"(12+8)*3.5\"}"
+     }
+    }
+   ],
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789793565.1101263
+  },
+  {
+   "role": "tool",
+   "content": "{\"expression\": \"(12+8)*3.5\", \"result\": 70}",
+   "tool_calls": null,
+   "tool_call_id": "mock_call_1",
+   "name": "calculator",
+   "thinking": null,
+   "ts": 1789793565.1101263
+  },
+  {
+   "role": "assistant",
+   "content": "（Mock回复）calculator 的执行结果是：{\"expression\": \"(12+8)*3.5\", \"result\": 70}",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789793565.1111112
+  }
+ ]
+}

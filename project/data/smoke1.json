@@ -1,0 +1,101 @@
+{
+ "id": "smoke1",
+ "title": "帮我计算 (12+8)*3.5",
+ "created_at": 1789781607.6947436,
+ "updated_at": 1789781607.9131236,
+ "summary": "",
+ "archive": [],
+ "tool_state": {},
+ "messages": [
+  {
+   "role": "user",
+   "content": "帮我计算 (12+8)*3.5",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.6957455
+  },
+  {
+   "role": "assistant",
+   "content": "好的，我需要调用工具来处理。",
+   "tool_calls": [
+    {
+     "id": "mock_call_1",
+     "type": "function",
+     "function": {
+      "name": "calculator",
+      "arguments": "{\"expression\": \"(12+8)*3.5\"}"
+     }
+    }
+   ],
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.6977456
+  },
+  {
+   "role": "tool",
+   "content": "{\"expression\": \"(12+8)*3.5\", \"result\": 70}",
+   "tool_calls": null,
+   "tool_call_id": "mock_call_1",
+   "name": "calculator",
+   "thinking": null,
+   "ts": 1789781607.6977456
+  },
+  {
+   "role": "assistant",
+   "content": "（Mock回复）calculator 的执行结果是：{\"expression\": \"(12+8)*3.5\", \"result\": 70}",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.6992476
+  },
+  {
+   "role": "user",
+   "content": "上海天气怎么样",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.9106178
+  },
+  {
+   "role": "assistant",
+   "content": "好的，我需要调用工具来处理。",
+   "tool_calls": [
+    {
+     "id": "mock_call_1",
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"上海\"}"
+     }
+    }
+   ],
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.9116147
+  },
+  {
+   "role": "tool",
+   "content": "{\"city\": \"上海\", \"condition\": \"多云\", \"temp_c\": 18, \"humidity\": 50, \"wind\": \"微风\", \"mock\": true}",
+   "tool_calls": null,
+   "tool_call_id": "mock_call_1",
+   "name": "get_weather",
+   "thinking": null,
+   "ts": 1789781607.9126167
+  },
+  {
+   "role": "assistant",
+   "content": "（Mock回复）get_weather 的执行结果是：{\"city\": \"上海\", \"condition\": \"多云\", \"temp_c\": 18, \"humidity\": 50, \"wind\": \"微风\", \"mock\": true}",
+   "tool_calls": null,
+   "tool_call_id": null,
+   "name": null,
+   "thinking": null,
+   "ts": 1789781607.9131236
+  }
+ ]
+}
